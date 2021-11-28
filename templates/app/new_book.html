@@ -1,0 +1,19 @@
+{% extends 'app/books.html' %}
+
+{% block main_block %}
+<h5 class="bg-light border border-secondary rounded mx-auto mt-2 p-1 pl-3 pr-3">
+    New BOOK 
+   
+<h5/>
+<form action="" method="post" class=mt-5 enctype="multipart/form-data">
+    {% csrf_token %}
+    <table class='table table-secondary table-borderless w-25 m-auto rounded py-3' >
+        <caption>New Book</caption>
+    {{form.as_table}}
+    <tr>
+        <td colspan='2'><input type="submit" value="ADD"></td>
+    </tr>
+    
+</table>
+</form>
+{% endblock %}

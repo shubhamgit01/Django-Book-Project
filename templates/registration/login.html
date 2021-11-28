@@ -1,0 +1,18 @@
+{% extends 'app/base.html'%}
+{% block main_block %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<form action="" method="POST" class='mt-5'>
+{%csrf_token%}
+<table class='table w-25 m-auto bg-light table-borderless ' >
+    {{form}}
+    <tr>
+        <td colspan="2" align='center'><input type="submit" value="SignIn"></td>
+    </tr>
+    
+</table>
+
+</form>
+
+{% endblock%}

@@ -1,0 +1,22 @@
+{% extends 'app/base.html' %}
+{% block main_block %}
+
+<form action="" method="POST" class="mt-5">
+    {% csrf_token %}
+    <table class='table m-auto w-25 bg-light table-borderless'>
+        {{form}}
+        <tr>
+            <td><input type="submit" value=SignUp></td>
+        </tr>
+
+
+    </table>
+
+
+</form>
+
+
+
+
+
+{% endblock %}
